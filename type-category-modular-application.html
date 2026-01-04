@@ -85,7 +85,12 @@
   }
 
   .page-main{max-width:1400px;margin:0 auto;padding:24px 20px 40px}
-  .page-title{display:none}
+  .page-title{
+    font-size:32px;
+    font-weight:700;
+    color:#071428;
+    margin-bottom:12px;
+  }
   .page-desc{
     font-size:16px;
     color:rgba(8,18,30,0.7);
@@ -151,15 +156,7 @@
     z-index:1;
   }
   .product-main-img::after{
-    content:'Sample Image';
-    position:absolute;
-    font-size:14px;
-    letter-spacing:0.5px;
-    color:rgba(7,20,40,0.45);
-    background:rgba(255,255,255,0.6);
-    padding:6px 12px;
-    border-radius:999px;
-    z-index:2;
+    content:'';
   }
   .product-main-img img{
     width:100%;
@@ -167,6 +164,9 @@
     object-fit:cover;
     position:relative;
     z-index:3;
+  }
+  .product-main-img img.is-broken{
+    display:none;
   }
 
   .product-gallery{
@@ -204,6 +204,9 @@
     width:100%;
     height:100%;
     object-fit:cover;
+  }
+  .gallery-thumb img.is-broken{
+    display:none;
   }
 
   .product-right{
@@ -284,21 +287,74 @@
   </div>
   <div class="hero-orb hero-orb1"></div>
   <div class="hero-orb hero-orb2"></div>
-  <div class="hero-content">
-    <div class="hero-title-box">
-      <h1 style="font-size:36px;font-weight:800;margin:0 0 8px 0;text-shadow:0 4px 16px rgba(0,0,0,0.2)">
-        Modular Application
-      </h1>
-      <p style="font-size:14px;opacity:0.95;margin:0">CPC Product Solutions</p>
-    </div>
-  </div>
+  <div class="hero-content"></div>
 </section>
 
 <main class="page-main">
-  <h2 class="page-title">Modular Application</h2>
-  <p class="page-desc">
-    Premium modular application solutions built for demanding industrial environments. Our advanced designs deliver outstanding reliability, performance, and precise control across critical applications.
-  </p>
+  <h2 class="page-title">Modular Application</h2><p class="page-desc">
+  <ul class="spec">
+
+    <li><strong>Application</strong>
+      <ul>
+        <li>On-Off Valve Application (S2)</li>
+        <li>Control Valve Application (S4)</li>
+      </ul>
+    </li>
+
+    <li><strong>Valve Type</strong>
+      <ul>
+        <li>Ball Valve</li>
+        <li>Butterfly Valve</li>
+        <li>Globe Valve</li>
+        <li>Gate Valve</li>
+        <li>General Purpose Valve</li>
+      </ul>
+    </li>
+
+    <li><strong>Leakage Class</strong>
+      <ul>
+        <li>Class IV / V / VI</li>
+      </ul>
+    </li>
+
+    <li><strong>Actuator Type</strong>
+      <ul>
+        <li>Electrical Compact & Smart Actuator (CM Series)</li>
+        <li>Electrical Standard Actuator (AB Series)</li>
+        <li>Electrical Fail Safe Actuator (FS Series)</li>
+      </ul>
+    </li>
+
+    <li><strong>Power Supply</strong>
+      <ul>
+        <li>24 VDC to 400 VAC</li>
+        <li>690 VAC (3 Phase)</li>
+      </ul>
+    </li>
+
+    <li><strong>End Connections</strong>
+      <ul>
+        <li>Socket Weld (SW)</li>
+        <li>Butt Weld (BW)</li>
+        <li>Raised Face (RF)</li>
+        <li>Ring Type Joint (RTJ)</li>
+      </ul>
+    </li>
+
+    <li><strong>Certification</strong>
+      <ul>
+        <li>API 6D / API 6F</li>
+        <li>SIL 2 / 3 / 4</li>
+        <li>ATEX (Electrical Parts)</li>
+        <li>CE</li>
+        <li>Fire Safe</li>
+        <li>Anti-Blowout</li>
+      </ul>
+    </li>
+
+  </ul>
+</p>
+
 
   <section class="products-section">
     <h3 class="section-title">Featured Products</h3>
@@ -307,19 +363,19 @@
       <article class="product-card">
         <div class="product-left">
           <div class="product-main-img">
-            <img src="/images/products/modular-application-1.jpg" alt="Modular Application Series One" />
+            <img src="/images/products/modular-application-1.jpg" alt="Modular Application Series One" onerror="this.classList.add('is-broken')" />
           </div>
           <div class="product-gallery">
-            <div class="gallery-thumb"><img src="/images/products/modular-application-1-g1.jpg" alt="Gallery 1" /></div>
-            <div class="gallery-thumb"><img src="/images/products/modular-application-1-g2.jpg" alt="Gallery 2" /></div>
-            <div class="gallery-thumb"><img src="/images/products/modular-application-1-g3.jpg" alt="Gallery 3" /></div>
-            <div class="gallery-thumb"><img src="/images/products/modular-application-1-g4.jpg" alt="Gallery 4" /></div>
+            <div class="gallery-thumb"><img src="/images/products/modular-application-1-g1.jpg" alt="Gallery 1" onerror="this.classList.add('is-broken')" /></div>
+            <div class="gallery-thumb"><img src="/images/products/modular-application-1-g2.jpg" alt="Gallery 2" onerror="this.classList.add('is-broken')" /></div>
+            <div class="gallery-thumb"><img src="/images/products/modular-application-1-g3.jpg" alt="Gallery 3" onerror="this.classList.add('is-broken')" /></div>
+            <div class="gallery-thumb"><img src="/images/products/modular-application-1-g4.jpg" alt="Gallery 4" onerror="this.classList.add('is-broken')" /></div>
           </div>
         </div>
         <div class="product-right">
           <h4 class="product-title">Modular Application Series One</h4>
           <p class="product-description">
-            High-performance modular application engineered for precision, durability, and dependable operation in mission-critical process control environments.
+            High-performance modular application engineered for precision, durability, and dependable operation in mission-critical environments.
           </p>
           <a href="/pdfs/modular-application-1.pdf" class="btn-pdf">Modular Application Series One Brochure</a>
         </div>
@@ -328,19 +384,19 @@
       <article class="product-card">
         <div class="product-left">
           <div class="product-main-img">
-            <img src="/images/products/modular-application-2.jpg" alt="Modular Application Series Two" />
+            <img src="/images/products/modular-application-2.jpg" alt="Modular Application Series Two" onerror="this.classList.add('is-broken')" />
           </div>
           <div class="product-gallery">
-            <div class="gallery-thumb"><img src="/images/products/modular-application-2-g1.jpg" alt="Gallery 1" /></div>
-            <div class="gallery-thumb"><img src="/images/products/modular-application-2-g2.jpg" alt="Gallery 2" /></div>
-            <div class="gallery-thumb"><img src="/images/products/modular-application-2-g3.jpg" alt="Gallery 3" /></div>
-            <div class="gallery-thumb"><img src="/images/products/modular-application-2-g4.jpg" alt="Gallery 4" /></div>
+            <div class="gallery-thumb"><img src="/images/products/modular-application-2-g1.jpg" alt="Gallery 1" onerror="this.classList.add('is-broken')" /></div>
+            <div class="gallery-thumb"><img src="/images/products/modular-application-2-g2.jpg" alt="Gallery 2" onerror="this.classList.add('is-broken')" /></div>
+            <div class="gallery-thumb"><img src="/images/products/modular-application-2-g3.jpg" alt="Gallery 3" onerror="this.classList.add('is-broken')" /></div>
+            <div class="gallery-thumb"><img src="/images/products/modular-application-2-g4.jpg" alt="Gallery 4" onerror="this.classList.add('is-broken')" /></div>
           </div>
         </div>
         <div class="product-right">
           <h4 class="product-title">Modular Application Series Two</h4>
           <p class="product-description">
-            Robust modular application solution featuring optimized control characteristics, rugged construction, and reliable performance in harsh operating conditions.
+            Robust modular application solution featuring optimized control characteristics and reliable performance in harsh conditions.
           </p>
           <a href="/pdfs/modular-application-2.pdf" class="btn-pdf">Modular Application Series Two Brochure</a>
         </div>
@@ -349,24 +405,23 @@
       <article class="product-card">
         <div class="product-left">
           <div class="product-main-img">
-            <img src="/images/products/modular-application-3.jpg" alt="Modular Application Series Three" />
+            <img src="/images/products/modular-application-3.jpg" alt="Modular Application Series Three" onerror="this.classList.add('is-broken')" />
           </div>
           <div class="product-gallery">
-            <div class="gallery-thumb"><img src="/images/products/modular-application-3-g1.jpg" alt="Gallery 1" /></div>
-            <div class="gallery-thumb"><img src="/images/products/modular-application-3-g2.jpg" alt="Gallery 2" /></div>
-            <div class="gallery-thumb"><img src="/images/products/modular-application-3-g3.jpg" alt="Gallery 3" /></div>
-            <div class="gallery-thumb"><img src="/images/products/modular-application-3-g4.jpg" alt="Gallery 4" /></div>
+            <div class="gallery-thumb"><img src="/images/products/modular-application-3-g1.jpg" alt="Gallery 1" onerror="this.classList.add('is-broken')" /></div>
+            <div class="gallery-thumb"><img src="/images/products/modular-application-3-g2.jpg" alt="Gallery 2" onerror="this.classList.add('is-broken')" /></div>
+            <div class="gallery-thumb"><img src="/images/products/modular-application-3-g3.jpg" alt="Gallery 3" onerror="this.classList.add('is-broken')" /></div>
+            <div class="gallery-thumb"><img src="/images/products/modular-application-3-g4.jpg" alt="Gallery 4" onerror="this.classList.add('is-broken')" /></div>
           </div>
         </div>
         <div class="product-right">
           <h4 class="product-title">Modular Application Series Three</h4>
           <p class="product-description">
-            Smart modular application package with enhanced monitoring capabilities, simplified maintenance, and dependable lifecycle performance.
+            Smart modular application package with enhanced monitoring capabilities and dependable lifecycle performance.
           </p>
           <a href="/pdfs/modular-application-3.pdf" class="btn-pdf">Modular Application Series Three Brochure</a>
         </div>
       </article>
-
     </div>
   </section>
 </main>
