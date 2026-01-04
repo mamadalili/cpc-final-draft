@@ -85,7 +85,12 @@
   }
 
   .page-main{max-width:1400px;margin:0 auto;padding:24px 20px 40px}
-  .page-title{display:none}
+  .page-title{
+    font-size:32px;
+    font-weight:700;
+    color:#071428;
+    margin-bottom:12px;
+  }
   .page-desc{
     font-size:16px;
     color:rgba(8,18,30,0.7);
@@ -151,15 +156,7 @@
     z-index:1;
   }
   .product-main-img::after{
-    content:'Sample Image';
-    position:absolute;
-    font-size:14px;
-    letter-spacing:0.5px;
-    color:rgba(7,20,40,0.45);
-    background:rgba(255,255,255,0.6);
-    padding:6px 12px;
-    border-radius:999px;
-    z-index:2;
+    content:'';
   }
   .product-main-img img{
     width:100%;
@@ -167,6 +164,9 @@
     object-fit:cover;
     position:relative;
     z-index:3;
+  }
+  .product-main-img img.is-broken{
+    display:none;
   }
 
   .product-gallery{
@@ -204,6 +204,9 @@
     width:100%;
     height:100%;
     object-fit:cover;
+  }
+  .gallery-thumb img.is-broken{
+    display:none;
   }
 
   .product-right{
@@ -284,20 +287,62 @@
   </div>
   <div class="hero-orb hero-orb1"></div>
   <div class="hero-orb hero-orb2"></div>
-  <div class="hero-content">
-    <div class="hero-title-box">
-      <h1 style="font-size:36px;font-weight:800;margin:0 0 8px 0;text-shadow:0 4px 16px rgba(0,0,0,0.2)">
-        HIPPS
-      </h1>
-      <p style="font-size:14px;opacity:0.95;margin:0">CPC Product Solutions</p>
-    </div>
-  </div>
+  <div class="hero-content"></div>
 </section>
 
 <main class="page-main">
   <h2 class="page-title">HIPPS</h2>
   <p class="page-desc">
-    Premium hipps solutions built for demanding industrial environments. Our advanced designs deliver outstanding reliability, performance, and precise control across critical applications.
+   <ul class="spec">
+  <li><strong>Valve Type</strong>
+    <ul>
+      <li><strong>Ball Valve</strong>
+        <ul>
+          <li><strong>Construction:</strong> Side Entry (bolted/welded) / Top Entry / Rising Stem (Orbit) / Trunnion or Floating / Full or Reduced Bore / Flanged or Weld Ends / Threaded / 3-Piece (Welded/Compact) Body / Split Body / 3-Way / Underground (Gas)</li>
+          <li><strong>Material:</strong> Cast Iron / Forged / Cast Body / Weld Overlay / All Materials</li>
+          <li><strong>Pressure Rating:</strong> ANSI 150# / 300# / 600# / 900# / 1500# / 2500# | API 2000 / 3000 / 5000 / 10000</li>
+          <li><strong>Seat:</strong> Soft / Metal / Primary Metal + Secondary Soft / Single or Double Piston Effect (Trunnion)</li>
+          <li><strong>Size:</strong> 1/2" to 56"</li>
+        </ul>
+      </li>
+
+      <li><strong>Butterfly Valve</strong>
+        <ul>
+          <li><strong>Construction:</strong> Concentric / Eccentric / High Performance / Wafer / Lug / Flanged / Double Flanged / Single-Double-Triple Offset</li>
+          <li><strong>Material:</strong> Cast Iron / Carbon Steel / Stainless Steel / Aluminum Bronze / PVC / All Materials</li>
+          <li><strong>Pressure Rating:</strong> PN10 / 16 / 25 / 40 / 64 | ANSI 150# / 300# / 600# / 900# / 1500#</li>
+          <li><strong>End Connections:</strong> SW / BW / RF / RTJ</li>
+          <li><strong>Seat:</strong> Rubber Lined / PTFE Lined / Metal Seat</li>
+          <li><strong>Size:</strong> 1/2" to 80"</li>
+          <li><strong>Leakage Class:</strong> IV / V / VI</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+  <li><strong>Actuator Type</strong>
+    <ul>
+      <li>Pneumatic (Rack &amp; Pinion / Scotch Yoke) / Hydraulic / Gas Direct / GOV / LBV System</li>
+      <li>Single or Double Acting | Rotary &amp; Linear | Electrical Fail-Safe</li>
+    </ul>
+  </li>
+
+  <li><strong>Instrument &amp; Pressure</strong>
+    <ul>
+      <li><strong>Pneumatic:</strong> up to 12 bar</li>
+      <li><strong>Gas (Sweet/Sour):</strong> up to 100 bar</li>
+      <li><strong>Hydraulic:</strong> up to 200 bar</li>
+      <li><strong>Power:</strong> 24 VDC to 690 VAC (3~)</li>
+    </ul>
+  </li>
+
+  <li><strong>Certification</strong>
+    <ul>
+      <li>API 6D / API 6F / SIL 2-3 / ATEX (Electrical) / CE / Fire Safe / Anti-Blowout</li>
+    </ul>
+  </li>
+</ul>
+
   </p>
 
   <section class="products-section">
@@ -307,19 +352,19 @@
       <article class="product-card">
         <div class="product-left">
           <div class="product-main-img">
-            <img src="/images/products/hipps-1.jpg" alt="HIPPS Series One" />
+            <img src="/images/products/hipps-1.jpg" alt="HIPPS Series One" onerror="this.classList.add('is-broken')" />
           </div>
           <div class="product-gallery">
-            <div class="gallery-thumb"><img src="/images/products/hipps-1-g1.jpg" alt="Gallery 1" /></div>
-            <div class="gallery-thumb"><img src="/images/products/hipps-1-g2.jpg" alt="Gallery 2" /></div>
-            <div class="gallery-thumb"><img src="/images/products/hipps-1-g3.jpg" alt="Gallery 3" /></div>
-            <div class="gallery-thumb"><img src="/images/products/hipps-1-g4.jpg" alt="Gallery 4" /></div>
+            <div class="gallery-thumb"><img src="/images/products/hipps-1-g1.jpg" alt="Gallery 1" onerror="this.classList.add('is-broken')" /></div>
+            <div class="gallery-thumb"><img src="/images/products/hipps-1-g2.jpg" alt="Gallery 2" onerror="this.classList.add('is-broken')" /></div>
+            <div class="gallery-thumb"><img src="/images/products/hipps-1-g3.jpg" alt="Gallery 3" onerror="this.classList.add('is-broken')" /></div>
+            <div class="gallery-thumb"><img src="/images/products/hipps-1-g4.jpg" alt="Gallery 4" onerror="this.classList.add('is-broken')" /></div>
           </div>
         </div>
         <div class="product-right">
           <h4 class="product-title">HIPPS Series One</h4>
           <p class="product-description">
-            High-performance hipps engineered for precision, durability, and dependable operation in mission-critical process control environments.
+            High-performance hipps engineered for precision, durability, and dependable operation in mission-critical environments.
           </p>
           <a href="/pdfs/hipps-1.pdf" class="btn-pdf">HIPPS Series One Brochure</a>
         </div>
@@ -328,19 +373,19 @@
       <article class="product-card">
         <div class="product-left">
           <div class="product-main-img">
-            <img src="/images/products/hipps-2.jpg" alt="HIPPS Series Two" />
+            <img src="/images/products/hipps-2.jpg" alt="HIPPS Series Two" onerror="this.classList.add('is-broken')" />
           </div>
           <div class="product-gallery">
-            <div class="gallery-thumb"><img src="/images/products/hipps-2-g1.jpg" alt="Gallery 1" /></div>
-            <div class="gallery-thumb"><img src="/images/products/hipps-2-g2.jpg" alt="Gallery 2" /></div>
-            <div class="gallery-thumb"><img src="/images/products/hipps-2-g3.jpg" alt="Gallery 3" /></div>
-            <div class="gallery-thumb"><img src="/images/products/hipps-2-g4.jpg" alt="Gallery 4" /></div>
+            <div class="gallery-thumb"><img src="/images/products/hipps-2-g1.jpg" alt="Gallery 1" onerror="this.classList.add('is-broken')" /></div>
+            <div class="gallery-thumb"><img src="/images/products/hipps-2-g2.jpg" alt="Gallery 2" onerror="this.classList.add('is-broken')" /></div>
+            <div class="gallery-thumb"><img src="/images/products/hipps-2-g3.jpg" alt="Gallery 3" onerror="this.classList.add('is-broken')" /></div>
+            <div class="gallery-thumb"><img src="/images/products/hipps-2-g4.jpg" alt="Gallery 4" onerror="this.classList.add('is-broken')" /></div>
           </div>
         </div>
         <div class="product-right">
           <h4 class="product-title">HIPPS Series Two</h4>
           <p class="product-description">
-            Robust hipps solution featuring optimized control characteristics, rugged construction, and reliable performance in harsh operating conditions.
+            Robust hipps solution featuring optimized control characteristics and reliable performance in harsh conditions.
           </p>
           <a href="/pdfs/hipps-2.pdf" class="btn-pdf">HIPPS Series Two Brochure</a>
         </div>
@@ -349,24 +394,23 @@
       <article class="product-card">
         <div class="product-left">
           <div class="product-main-img">
-            <img src="/images/products/hipps-3.jpg" alt="HIPPS Series Three" />
+            <img src="/images/products/hipps-3.jpg" alt="HIPPS Series Three" onerror="this.classList.add('is-broken')" />
           </div>
           <div class="product-gallery">
-            <div class="gallery-thumb"><img src="/images/products/hipps-3-g1.jpg" alt="Gallery 1" /></div>
-            <div class="gallery-thumb"><img src="/images/products/hipps-3-g2.jpg" alt="Gallery 2" /></div>
-            <div class="gallery-thumb"><img src="/images/products/hipps-3-g3.jpg" alt="Gallery 3" /></div>
-            <div class="gallery-thumb"><img src="/images/products/hipps-3-g4.jpg" alt="Gallery 4" /></div>
+            <div class="gallery-thumb"><img src="/images/products/hipps-3-g1.jpg" alt="Gallery 1" onerror="this.classList.add('is-broken')" /></div>
+            <div class="gallery-thumb"><img src="/images/products/hipps-3-g2.jpg" alt="Gallery 2" onerror="this.classList.add('is-broken')" /></div>
+            <div class="gallery-thumb"><img src="/images/products/hipps-3-g3.jpg" alt="Gallery 3" onerror="this.classList.add('is-broken')" /></div>
+            <div class="gallery-thumb"><img src="/images/products/hipps-3-g4.jpg" alt="Gallery 4" onerror="this.classList.add('is-broken')" /></div>
           </div>
         </div>
         <div class="product-right">
           <h4 class="product-title">HIPPS Series Three</h4>
           <p class="product-description">
-            Smart hipps package with enhanced monitoring capabilities, simplified maintenance, and dependable lifecycle performance.
+            Smart hipps package with enhanced monitoring capabilities and dependable lifecycle performance.
           </p>
           <a href="/pdfs/hipps-3.pdf" class="btn-pdf">HIPPS Series Three Brochure</a>
         </div>
       </article>
-
     </div>
   </section>
 </main>
