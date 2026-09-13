@@ -1,97 +1,69 @@
 <div align="center">
-  <img src="media/logo.jpeg" width="220" alt="CPC Valve Industry" />
-  <h1>CPC Valve Industry Web</h1>
-    <h1>http://controlprocesscomponents.ae</h1>
 
-  <p>Category driven product experience with Custom HTML, Custom PHP, and WordPress CMS</p>
+# MohamadReza Dalili
 
-  <p>
-    <a href="#overview">Overview</a> •
-    <a href="#why-this-architecture">Why this architecture</a> •
-    <a href="#how-it-works">How it works</a> •
-    <a href="#project-structure">Project structure</a> •
-    <a href="#setup">Setup</a> •
-    <a href="#deployment">Deployment</a>
-  </p>
+**Web Developer & Digital Marketing Specialist**
 
-  <p>
-    <img alt="Stack" src="https://img.shields.io/badge/Stack-WordPress%20%7C%20PHP%20%7C%20HTML%20%7C%20CSS%20%7C%20JS-0b5cab">
-    <img alt="Content model" src="https://img.shields.io/badge/Content%20Model-Categories%20%26%20Category%20Types-0b5cab">
-    <img alt="Focus" src="https://img.shields.io/badge/Focus-UX%20%26%20Performance-0b5cab">
-  </p>
+Building category-driven product experiences — where clean architecture meets SEO and conversion.
+
+<p>
+  <img alt="Location" src="https://img.shields.io/badge/Tehran-Iran-0b5cab?style=flat-square">
+  <img alt="Company" src="https://img.shields.io/badge/@-Boomerang-0b5cab?style=flat-square">
+  <a href="https://mrdalili.com"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-mrdalili.com-1f6feb?style=flat-square"></a>
+  <a href="https://www.linkedin.com/in/mohamadreza-dalili/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Connect-0077b5?style=flat-square&logo=linkedin&logoColor=white"></a>
+</p>
+
 </div>
 
-<br>
+---
 
-## Overview
-CPC Valve Industry Web is a category driven website built to deliver a cleaner browsing experience than classic product-first navigation.
+## About
 
-Instead of managing every page as a WooCommerce product, we use:
+I build and maintain product-catalogue websites for manufacturing and retail brands — the kind with hundreds of SKUs, multiple languages, and a sales team that needs to send a link that just works.
 
-• WordPress categories as the main content backbone  
-• A custom "category type" layer to shape different page templates  
-• Custom PHP and custom HTML blocks for full control of UI and performance
+- Currently building the **Boomerang** multilingual sanitary-ware catalogue (FA / EN / AR / RU)
+- I lean on **WordPress categories as a content backbone** instead of forcing everything into WooCommerce products
+- Comfortable across the whole delivery path: custom PHP/HTML templates → on-page SEO → analytics
+- Interested in **e-commerce, automation, and data**
 
-This makes managing pages easier, keeps the navigation consistent, and improves the user journey.
+---
 
-## Why this architecture
-Typical product-based setups become messy when you need:
+## Tech
 
-• Many informational pages that are not real products  
-• Multiple templates for different industrial categories  
-• A fast and consistent UX across browsing, filters, and catalogue downloads
+<p>
+  <img alt="PHP" src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white">
+  <img alt="WordPress" src="https://img.shields.io/badge/WordPress-21759B?style=for-the-badge&logo=wordpress&logoColor=white">
+  <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+  <img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+  <img alt="Tailwind" src="https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white">
+  <img alt="SEO" src="https://img.shields.io/badge/SEO-4285F4?style=for-the-badge&logo=googleanalytics&logoColor=white">
+</p>
 
-Our approach solves that by treating categories as first-class pages, then attaching a page behavior using category type.
+---
 
-## How it works
-High level flow:
+## Selected work
 
-• Admin creates or updates Categories  
-• Each category gets a Category Type (template behavior)  
-• Frontend renders a category page with a custom HTML layout  
-• Optional catalogue download is generated per category or per item
+| Project | What it is | Stack |
+| :--- | :--- | :--- |
+| **[Boomerang Catalogue](https://github.com/mamadalili/boomerang-co)** | Multilingual sanitary-ware catalogue — vanity units, washbasins, mirrors, faucets. Built so comparison and project hand-off are easy. | HTML · CSS · JS · i18n |
+| **[CPC Valve Industry](https://github.com/mamadalili/cpc-final-draft)** | Category-driven industrial site. Categories act as first-class pages with a "category type" layer driving templates — instead of product-first navigation. | WordPress · Custom PHP |
+| **[Personal Portfolio](https://github.com/mamadalili/personal-web-draft)** | Responsive portfolio with glassmorphism design and smooth animations. | HTML · Tailwind · JS |
 
-Common patterns used:
+---
 
-• Category landing page with featured cards  
-• Subcategory grid and navigation  
-• Template variations by category type  
-• Catalogue download button mapped to a consistent URL pattern
+## Approach
+
+Most catalogue sites get messy for the same reason: everything is modelled as a *product*, even when it isn't. My default is to treat **categories as first-class pages**, then attach behaviour via a category-type layer. That keeps navigation consistent, makes templates reusable across very different sections, and leaves informational pages somewhere sensible to live.
+
+---
 
 <div align="center">
-  <h2>📬 Contact Me</h2>
-  <p>Interested in working together? Let's talk.</p>
 
-  <table style="border: none; border-collapse: collapse;">
-    <tr>
-      <td style="padding: 10px;">
-        <a href="mailto:mohammadreza.dalili@live.com">
-          <img src="https://img.icons8.com/ios-filled/50/000000/email-open.png" width="25" style="vertical-align:middle;"/>
-        </a>
-      </td>
-      <td style="padding: 10px; text-align: left;">
-        <strong>Email:</strong> <a href="mailto:mohammadreza.dalili@live.com" style="text-decoration: none; color: #333;">mohammadreza.dalili@live.com</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 10px;">
-        <a href="https://www.linkedin.com/in/mohamadreza-dalili/">
-          <img src="https://img.icons8.com/ios-filled/50/000000/linkedin.png" width="25" style="vertical-align:middle;"/>
-        </a>
-      </td>
-      <td style="padding: 10px; text-align: left;">
-        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mohamadreza-dalili/" target="_blank" style="text-decoration: none; color: #0077b5;">/in/mohamadreza-dalili</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="padding: 10px;">
-        <a href="https://mrdalili.com">
-          <img src="https://img.icons8.com/ios-filled/50/000000/globe.png" width="25" style="vertical-align:middle;"/>
-        </a>
-      </td>
-      <td style="padding: 10px; text-align: left;">
-        <strong>Portfolio:</strong> <a href="https://mrdalili.com" target="_blank" style="text-decoration: none; color: #333;">mrdalili.com</a>
-      </td>
-    </tr>
-  </table>
+### Get in touch
+
+[![Email](https://img.shields.io/badge/Email-mohammadreza.dalili@live.com-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:mohammadreza.dalili@live.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-/in/mohamadreza--dalili-0077b5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohamadreza-dalili/)
+[![Website](https://img.shields.io/badge/Web-mrdalili.com-1f6feb?style=flat-square&logo=googlechrome&logoColor=white)](https://mrdalili.com)
+
 </div>
